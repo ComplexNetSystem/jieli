@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jie Li - Homepage</title>
-    <!-- You can link your CSS file here if you create one -->
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Your Name - Homepage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -58,11 +56,11 @@
 <body>
 
 <header>
-    <h1>Jie Li</h1>
+    <h1>Your Name</h1>
 </header>
 
 <nav>
-    <a href="showContent('research')">Home</a>
+    <a onclick="showContent('home')">Home</a>
     <a onclick="showContent('research')">Research</a>
     <a onclick="showContent('publications')">Publications</a>
     <a onclick="showContent('cv')">CV</a>
@@ -81,19 +79,12 @@
 
 <section id="publications">
     <h2>Publications</h2>
-    <p>
-        1.Rydin, A., Milaneschi, Y., Quax, R., Li, J., et al. (2023). A network analysis of depressive symptoms and metabolomics. Psychological Medicine, 1-10. <a href="doi: 10.1017/S0033291723001009"> <br> 
-        2.Galbraith, E., Li, J., Rio-Vilas, V.J.D. et al. In.To. COVID-19 socio-epidemiological co-causality. Sci Rep 12, 5831 (2022). doi.org/10.1038/s41598-022-09656-1  <br>
-        3.Li J, Convertino M (2021) Temperature increase drives critical slowing down of fish ecosystems. PLOS ONE 16(10): e0246222. doi.org/10.1371/journal.pone.0246222 <br>
-        4.Li, J., Convertino, M. Inferring ecosystem networks as information flows. Sci Rep 11, 7094 (2021). doi.org/10.1038/s41598-021-86476-9 <br>
-        5.Li J, Convertino M. Optimal Microbiome Networks: Macroecology and Criticality. Entropy. 2019; 21(5):506. doi.org/10.3390/e21050506 <br>
-        6.Zhengdi Qin, Jie Li, Tianjiong Zhang, Siping Chen. “Digital TCD Ultrasound Blood Flow Detection System” [P]. Chinese Patent:2015200954772, 2015.7.29. (Chinese Patent) <br>
-    </p>
+    <p>Include a list of your publications, articles, or any relevant work.</p>
 </section>
 
 <section id="cv">
     <h2>CV</h2>
-    <p><a href="https://drive.google.com/file/d/1kK7BGA_0HN9Uf8Xt_n7RxfZmC5Y7hBBx/view?usp=share_link">CV</a></p>
+    <p>Upload or link to your curriculum vitae or resume here.</p>
 </section>
 
 <section id="contact">
@@ -102,10 +93,13 @@
 </section>
 
 <footer>
-    <p>&copy; 2023 Jie Li. All rights reserved.</p>
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
 </footer>
 
 <script>
+    // Show the "home" section by default
+    showContent('home');
+
     function showContent(tab) {
         // Hide all sections
         document.querySelectorAll('section').forEach(section => {
