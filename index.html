@@ -131,13 +131,7 @@
 
 <script>
     // Show the "home" section by default
-    // showContent('home');
-
-    // Retrieve the last active tab from sessionStorage
-    const lastActiveTab = sessionStorage.getItem('lastActiveTab') || 'home';
-
-    // Show the last active tab on page load
-    showContent(lastActiveTab);
+    showContent('home');
 
     function showContent(tab) {
         // Hide all sections
