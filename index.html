@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Homepage</title>
+    <title>Jie Li - Homepage</title>
     <!-- You can link your CSS file here if you create one -->
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
@@ -34,6 +34,7 @@
             padding: 1rem;
             margin: 0 0.5rem;
             border-radius: 4px;
+            cursor: pointer;
             transition: background-color 0.3s;
         }
 
@@ -43,6 +44,7 @@
 
         section {
             padding: 2rem;
+            display: none;
         }
 
         footer {
@@ -56,15 +58,15 @@
 <body>
 
 <header>
-    <h1>Your Name</h1>
+    <h1>Jie Li</h1>
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="research/index.html">Research</a>
-    <a href="publications/index.html">Publications</a>
-    <a href="cv/index.html">CV</a>
-    <a href="contact/index.html">Contact</a>
+    <a onclick="showContent('home')">Home</a>
+    <a onclick="showContent('research')">Research</a>
+    <a onclick="showContent('publications')">Publications</a>
+    <a onclick="showContent('cv')">CV</a>
+    <a onclick="showContent('contact')">Contact</a>
 </nav>
 
 <section id="home">
@@ -72,9 +74,41 @@
     <p>This is the home section where you can provide an introduction or any other relevant information.</p>
 </section>
 
+<section id="research">
+    <h2>Research</h2>
+    <p>This is where you can provide information about your research activities.</p>
+</section>
+
+<section id="publications">
+    <h2>Publications</h2>
+    <p>Include a list of your publications, articles, or any relevant work.</p>
+</section>
+
+<section id="cv">
+    <h2>CV</h2>
+    <p>Upload or link to your curriculum vitae or resume here.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Provide information on how people can get in touch with you. This could include an email address or other contact details.</p>
+</section>
+
 <footer>
-    <p>&copy; 2023 Your Name. All rights reserved.</p>
+    <p>&copy; 2023 Jie Li. All rights reserved.</p>
 </footer>
+
+<script>
+    function showContent(tab) {
+        // Hide all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.display = 'none';
+        });
+
+        // Show the selected section
+        document.getElementById(tab).style.display = 'block';
+    }
+</script>
 
 </body>
 </html>
