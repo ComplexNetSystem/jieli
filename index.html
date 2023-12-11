@@ -162,6 +162,27 @@
 
 <script>
     // JavaScript to handle navigation and content display
+    // Show the "home" section by default
+    // showContent('home');
+
+    // Check if sessionStorage has the last active tab
+    const lastActiveTab = sessionStorage.getItem('lastActiveTab');
+
+    // Show the last active tab or default to 'home' on page load
+    showContent(lastActiveTab || 'home');
+
+    function showContent(tab) {
+        // Hide all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.display = 'none';
+        });
+
+        // Show the selected section
+        document.getElementById(tab).style.display = 'block';
+
+        // Save the last active tab to sessionStorage
+        sessionStorage.setItem('lastActiveTab', tab);
+    }
 </script>
 
 </body>
