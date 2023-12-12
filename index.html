@@ -98,26 +98,29 @@
     
         .left-column {
             flex: 1;
-            max-width: 60%; /* Adjust the width as needed */
+            max-width: calc(50% - 10px); /* Adjust the width as needed */
+            margin-right: 10px; /* Add margin between figures */
         }
     
         .right-column {
             flex: 1;
-            max-width: 35%; /* Adjust the width as needed */
+            max-width: calc(50% - 10px); /* Adjust the width as needed */
+            margin-left: 10px; /* Add margin between figures */
         }
     
         .figure-container figure {
-            margin: 10px;
+            width: 100%; /* Ensure figures don't exceed their container */
+            height: auto; /* Allow images to maintain their aspect ratio */
         }
     
         @media (max-width: 768px) {
             .left-column, .right-column {
                 max-width: 100%;
             }
-    
+            
             .right-column {
                 order: 1; /* Change the order on smaller screens */
-                margin-top: 20px; /* Add some spacing */
+                margin: 10px 0; /* Add some spacing above and below */
             }
         }
     </style>
