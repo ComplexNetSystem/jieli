@@ -98,21 +98,28 @@
     
         .left-column {
             flex: 1;
-            max-width: 50%; /* Adjust the width as needed */
+            max-width: 60%; /* Adjust the width as needed */
         }
     
         .right-column {
             flex: 1;
-            max-width: 50%; /* Adjust the width as needed */
+            max-width: 35%; /* Adjust the width as needed */
         }
     
         .figure-container figure {
             margin: 10px;
+            max-width: 100%; /* Ensure figures don't exceed their container */
+            height: auto; /* Allow images to maintain their aspect ratio */
         }
     
         @media (max-width: 768px) {
             .left-column, .right-column {
                 max-width: 100%;
+            }
+    
+            .right-column {
+                order: 1; /* Change the order on smaller screens */
+                margin-top: 20px; /* Add some spacing */
             }
         }
     </style>
