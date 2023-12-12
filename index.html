@@ -129,9 +129,17 @@
     <ul>
         <li>
             <!-- Research Project 1 -->
-            <h3>Research Project Title 1</h3>
+            <h3>Do static structural features predict dynamic node importance in hypergraphs?</h3>
             <p>
-                This is a description of my first research project. You can provide detailed information about the project, including objectives, methodologies, and outcomes.
+                Hypergraphs provide a more intuitive representation of complex systems where interactions extend beyond pairs of nodes. Driver nodes in hypergraphs, crucial for system control, are often identified using structural properties such as centrality metrics. 
+                However, current research in graph theory reveals that structurally central nodes may not necessarily be driver nodes, and the essential consideration of system dynamics is important. 
+                To assess the predictive capability of centrality metrics for driver nodes in hypergraphs, we construct Bayesian networks (BNs) with deterministic dynamics so that inferring driver nodes is computationally feasible by intervening on nodes.
+                Generating data samples based on the known probability distribution of these BNs, we then infer various types of networks and hypergraphs from the synthetic data. 
+                Subsequently, applying centrality metrics to these networks and hypergraphs yields diverse measures signifying node significance considering network structures. 
+                Our analysis employs linear regression and machine learning models (for instace, random forest and XG boosting) to study the predictive power of individual centrality measures and their combinations for node impacts.
+                The results from linear regression suggest that no single centrality measure can independently predict driver nodes in hypergraphs. Random forest and XG boosting regression exhibit improved performance in comparison to linear regression, but still show limited predictive capability. 
+                These findings highlight that relying solely on structural features for inferring driver node in hypergraphs is inadequate, emphasizing the critical need to incorporate both structural properties and system dynamics in this inference process. 
+                Given the challenges in elucidating the entire dynamics of complex systems, there is a demand for an intelligent algorithm to infer driver nodes, tailored to specific control tasks in hypergraphs.
             </p>
             
             <!-- Add Figure 1 related to Research Project 1 -->
