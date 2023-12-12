@@ -88,6 +88,33 @@
                 position: relative;
             }
         }
+
+        .figure-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .left-column {
+            flex: 1;
+            max-width: 50%; /* Adjust the width as needed */
+        }
+    
+        .right-column {
+            flex: 1;
+            max-width: 50%; /* Adjust the width as needed */
+        }
+    
+        .figure-container figure {
+            margin: 10px;
+        }
+    
+        @media (max-width: 768px) {
+            .left-column, .right-column {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
