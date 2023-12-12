@@ -202,6 +202,47 @@
         </li>
 
         <!-- Add additional research projects similarly -->
+        <li>
+            <!-- Research Project 3 -->
+            <h3>Multilayer Networks of Cardiovascular Diseases and Depression via Multipartite Projections</h3>
+            <p>
+                One of the most impactful comorbidities is the association between cardiovascular disease (CVD) and major depression (MD). 
+                Despite its significance, the underlying biological pathways remain elusive, possibly due to complex, non-linear associations spread across multiple mechanisms. 
+                In this study, we propose a multipartite projection method based on mutual information correlation to construct multilayer disease networks. We apply our methods to a dataset from the Young Finns Study. 
+                In this cross-sectional cohort, two phenotype modules are studied: CVD and MD phenotypes, along with related risk factors and two biological measures including metabolites and lipids. 
+                Instead of directly correlating CVD and MD phenotype variables, we extend the notion of a bipartite network to create a multipartite network that connects phenotype variables to intermediate biological variables. 
+                Projecting from these intermediate groups results in a weighted multilayer network, where each link between CVD and MD phenotypes is marked by its 'layer' (in our use-case: metabolome or lipidome). 
+                We test four methods based on the expectation that the weighted multilayer network should ideally function as a decomposition of the pairwise correlation between phenotype variables. 
+                We find that using the sum of the average correlations between a phenotype pair and their shared neighboring variables as the projected correlation performs best in our current dataset. 
+                The projected correlation network finds gender and BMI as important risk factors related to cardiovascular diseases and depression. 
+                The projection method identifies significant biological mediators, including creatinine and leucine in metabolites, and acylcarnitine and phosphatidylcholines in lipids, explaining the comorbidity between CVD and MD. 
+                These findings suggest the potential role of these mediators in comorbidity development due to exposure to the risk factors. 
+                Our method generalizes to any number of layers and phenotype modules, offering a truly system-level overview of biological pathways contributing to comorbidity.
+            </p>
+            
+            <!-- Figures for Research Project 2 -->
+            <div class="figure-container">
+                <!-- Left column for two figures -->
+                <div class="left-column">
+                    <figure>
+                        <img src="r2_using_centralities_in_graph.png" alt="Research Project 1 Image 1">
+                        <figcaption>Figure 1: R squared between node impact and centralities in graphs.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="r2_using_centralities_in_hypergraph.png" alt="Research Project 1 Image 2">
+                        <figcaption>Figure 2: R squared between node impact and centralities in hypergraphs.</figcaption>
+                    </figure>
+                </div>
+                
+                <!-- Right column for one figure -->
+                <div class="right-column">
+                    <figure>
+                        <img src="prediction_RF.png" alt="Research Project 1 Image 3">
+                        <figcaption>Figure 3: Predicted node impact vs. testing node impact (in log scale)</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </li>
         
     </ul>
     
