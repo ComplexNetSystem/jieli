@@ -178,16 +178,13 @@
             <!-- Research Project 2 -->
             <h3>Do structural features predict dynamic node importance in hypergraphs?</h3>
             <p>
-                Hypergraphs provide a more intuitive representation of complex systems where interactions extend beyond pairs of nodes. Driver nodes in hypergraphs, crucial for system control, are often identified using structural properties such as centrality metrics. 
-                However, current research in graph theory reveals that structurally central nodes may not necessarily be driver nodes, and the essential consideration of system dynamics is important. 
-                To assess the predictive capability of centrality metrics for driver nodes in hypergraphs, we construct Bayesian networks (BNs) with deterministic dynamics so that inferring driver nodes is computationally feasible by intervening on nodes.
-                Generating data samples based on the known probability distribution of these BNs, we then infer various types of networks and hypergraphs from the synthetic data. 
-                Subsequently, applying centrality metrics to these networks and hypergraphs yields diverse measures signifying node significance considering network structures. 
-                Our analysis employs machine learning models (for instance, Linear regression, Random Forest regression and XGBoost) to study the predictive power of individual centrality measures and their combinations for node impact.
-                The results from linear regression suggest that no single centrality measure can independently predict driver nodes in hypergraphs. Random forest and XG boosting regression exhibit improved performance in comparison to linear regression, 
-                but still show limited predictive capability. 
-                These findings highlight that relying solely on structural features for inferring driver node in hypergraphs is inadequate, emphasizing the critical need to incorporate both structural properties and system dynamics in this inference process. 
-                Given the challenges in elucidating the entire dynamics of complex systems, there is a demand for an intelligent algorithm to infer driver nodes, tailored to specific control tasks in hypergraphs.
+                Hypergraphs can better represent complex systems where interactions extend beyond pairs of nodes. Driver nodes in hypergraphs, crucial for system control, can be defined as node impact on system dynamics in response to an intervention, but often identified using structural properties such as centrality metrics. 
+                Current research in graph theory reveals that structurally central nodes may not necessarily be driver nodes, and the essential consideration of system dynamics is crucial. Despite this, due to the fact that structural properties significantly influence systems dynamics, we investigate in this study whether driver nodes can be predicted by structural centrality metrics. 
+                To achieve this objective, we construct both purely simulated and data-driven Bayesian networks with known dynamics, enabling precise computation of node impact, which serves as the ground truth. Within these networks, nodes exhibit either conditional dependency on a single node or synergistic dependency on two nodes, forming structures of both pairs and higher-order triplets. 
+                Data samples are generated based on the known dynamics of these networks, followed by the reconstruction of association networks and synergistic hypergraphs from the synthetic data. We then apply various centrality metrics to these graphs and hypergraphs, yielding node centrality data, which is used to predict node impact. 
+                We evaluate the individual and collective predictive capacities of these centrality metrics by calculating the coefficients of determination. This involves comparing the node impact against each individual centrality metric, as well as against predicted node impact from the random forest model. 
+                Results show that no single centrality metric independently possesses the capacity to effectively predict driver nodes in hypergraphs. The random forest model, employing all centrality metrics in purely simulated Bayesian networks, demonstrates enhanced yet limited performance. However, when applied to data-driven networks, its effectiveness significantly diminishes. 
+                These findings highlight the imperative to incorporate system dynamics into the methodology for predicting driver nodes in hypergraphs. Given the difficulties in fully understanding the dynamics of complex systems, there arises a need for an advanced algorithm capable of inferring driver nodes, specifically designed for distinct control tasks within hypergraphs.
             </p>
             
             <!-- Figures for Research Project 2 -->
@@ -249,8 +246,6 @@
             <figure>
                 <img src="Project_4_1.png" alt="Research Project 4 Image 1">
                 <figcaption>Figure 1: Inferred predictable causality via CCM and OIF for embedded true causality.</figcaption>
-                <img src="Project_4_2.png" alt="Research Project 4 Image 2">
-                <figcaption>Figure 2: Normalized species interactions matrices inferred by CCM and OIF models.</figcaption>
             </figure>
         </li>
         
